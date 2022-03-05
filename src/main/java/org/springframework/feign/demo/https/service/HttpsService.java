@@ -16,8 +16,7 @@ import feign.jackson.JacksonEncoder;
  * @author shanhm1991@163.com
  *
  */
-@FeignClient(url = "${https.url}", readTimeoutMillis = 5000, 
-encoder = JacksonEncoder.class, decoder = JacksonDecoder.class,
+@FeignClient(url = "${https.url}", readTimeoutMillis = 5000,
 sslCertPath="${https.keystore}",
 sslPasswd="${https.keystore.passwd}",
 sslSocketFactory=HttpsSSLSocketFactory.class,

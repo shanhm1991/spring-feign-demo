@@ -6,7 +6,7 @@ package org.springframework.feign.demo.api.bean;
 */
 public class Request {
 
-	private String id = "req.1001";
+	private String id = "001";
 	
 	private String user = "shanhm";
 

@@ -27,7 +27,7 @@ public class HttpController {
 	@RequestMapping("/author")
 	@ResponseBody
 	public Author getAuthor() {
-		Author author =  httpService.getAuthor(new Request());
+		Author author =  httpService.getAuthor(new Request(), "author", "12345");
 		LOG.info("response << {}", author);
 		return author;
 	}
